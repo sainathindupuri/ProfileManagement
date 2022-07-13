@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My page title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <div class="heading">
+        <div class="card"
+            style="width: 100rem; left: 10rem;right: 10rem; align-items: center; background: cadetblue; font-style: oblique;">
+            <div class="card-body" style="text-align:center;">
+                <h5 class="card-title" style="text-align:center">Assignment 1</h5>
+                <div>
+                    <p class="card-text" style="text-align:center">Name: Sainath Indupuri UTA ID : 1001856992</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+
+<body>
+    <div class="landing" style="width: 100rem; margin-left: 5rem;margin-right: 5rem; align-items: center;">
+        <div class="cards">
+
+            <script type="text/javascript">
+                var data = '{{data}}'
+                var wrapper = document.getElementsByClassName("cards")
+                console.log("data recived is " + data)
+                var myHTML = '';
+
+                for (var i = 0; i < 10; i++) {
+                    myHTML += '<span class="test">Testing out my script! loop #' + (i + 1) + '</span><br/><br/>';
+                }
+
+                wrapper.innerHTML = myHTML
+
+            </script>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
